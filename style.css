@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.body {
+    position: absolute;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    overflow-y: hidden;
+}
+
+.navbar {
+    background-image: url("bg2.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*to avoid overflow of elements*/
+.navbar ul {
+    font-family: 'Raleway', sans-serif;
+
+    overflow: auto;
+}
+
+/*remove list style and float left for making it horizontal list one item after one item*/
+.navbar li {
+    float: left;
+    list-style: none;
+    padding: 6px;
+    margin: 13px 20px;
+}
+
+/*to remove anchor tag underline */
+.navbar li a {
+    text-decoration: none;
+    color: white;
+}
+
+/*applied id cause color get overflow by other class*/
+#active a {
+    padding-left: 45vw;
+    color: rgb(0, 191, 255);
+
+}
+
+.container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.background {
+    background-image: url("bg1.png");
+    position: absolute;
+}
+
+/*text on bg-image*/
+.bg-title {
+    width: 40vw;
+    height: 50vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 80px;
+    padding-top: 30px;
+
+}
+
+/*to give more preference to second div*/
+.bg-title {
+    z-index: 10;
+}
+
+.bg-title p {
+    color: white;
+    word-spacing: 4px;
+}
+
+.bg-title .hello {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    color: rgb(0, 191, 255);
+    font-weight: bold;
+}
+
+.left {
+    font-family: 'Roboto', sans-serif;
+    text-indent: 40px;
+    text-align: left;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 100;
+}
+
+.bold {
+    font-family: 'Archivo', sans-serif;
+    font-size: 35px;
+    word-spacing: 2px;
+}
+
+/*profile picture have 2nested div and profilepic is parent div*/
+.profilepic {
+    margin: 30px;
+}
+
+.propic {
+    align-items: center;
+    position: absolute;
+    padding-left: 38%;
+
+}
+
+.propic img {
+    border: 4px solid white;
+    display: block;
+    margin: auto;
+    border-radius: 125px;
+    height: 250px;
+    width: 250px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.367), 0 6px 8px 0 rgba(0, 0, 0, 0.367);
+}
+
+.propic h2 {
+    
+    font-family: 'Archivo', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+.propic hr {
+    border: 1px solid grey;
+
+}
+
+.profilepic p {
+    line-height: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 26% 10% 0% 10%;
+    text-align: center;
+    text-indent: 20px;
+}
+
+/* Styling for education section*/
+.education {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.education h2 {
+
+    font-family: 'Archivo', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+.education hr {
+    border: 1px solid grey;
+    width: 20%;
+    margin: auto;
+}
+
+.edu-p {
+    background-color: #e3dcdc3e;
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 20px 40px 20px 40px;
+    box-sizing: border-box;
+    flex-direction: row;
+    text-align: center;
+}
+
+.fbox {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    width: 25px;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    margin: 50px;
+    box-shadow: 5px 5px 5px rgba(167, 167, 172, 0.572);
+}
+
+
+.fbox h2 {
+    padding: 3px 0px 0px 0px;
+    font-size: 20px;
+}
+
+.fbox p {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    padding: 12px 2px 3px 2px;
+}
+
+
+/*styling for experience section*/
+.experience {
+    font-family: 'Roboto', sans-serif;
+}
+
+.experience h2 {
+    font-family: 'Archivo', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+.experience hr {
+    border: 1px solid grey;
+    width: 20%;
+    margin: auto;
+}
+
+.main-box {
+    position: relative;
+    background-color: #e3dcdc3e;
+    margin: 40px 0px;
+    padding: 20px 40px 20px 40px;
+    box-sizing: border-box;
+}
+
+.number {
+    align-items: center;
+    position: absolute;
+    margin: 8px auto 8px -45px;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 30px;
+    color: white;
+}
+
+.number h1 {
+    font-size: 24px;
+    text-align: center;
+    padding: 11px;
+}
+
+.box {
+    transition: margin-right ;
+    position: relative;
+    background-color: #fff;
+    width: 65%;
+    font-size: 16px;
+    margin: 50px auto;
+    padding: 10px 20px 10px 20px;
+    
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.567);
+}
+
+.box h2 {
+    text-align: left;
+    line-height: 12px;
+    margin-top: 28px;
+    margin-left: 22px;
+}
+
+.box ul {
+    padding-top: 2px;
+    padding-left: 52px;
+    color: rgb(134, 133, 133);
+    margin-bottom: 18px;
+}
+
+/*Skill*/
+.skill,.education ,h2 {
+
+    font-family: 'Archivo', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+.skill hr {
+    border: 1px solid grey;
+    width: 20%;
+    margin: auto;
+}
+
+.slider-frame {
+    overflow: hidden;
+    height: 250px;
+    width: 600px;
+    margin: 60px auto;
+}
+
+.img-container img {
+    height: 250px;
+    width: 200px;
+}
+
+/*---------- SLIDE ANIMATION --------------*/
+
+
+@keyframes slide_animation {
+    0% {
+        left: 0px;
+    }
+
+    10% {
+        left: 500px;
+    }
+
+    20% {
+        left: 1000px;
+    }
+
+    30% {
+        left: 1500px;
+    }
+
+    40% {
+        left: 2000px;
+    }
+
+    50% {
+        left: 2500px;
+    }
+
+    60% {
+        left: 2000px;
+    }
+
+    70% {
+        left: 1500px;
+    }
+
+    80% {
+        left: 1000px;
+    }
+
+    90% {
+        left: 500px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+.slide-images {
+    width: 3600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    animation-name: slide_animation;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    
+}
+
+.img-container {
+    height: 400px;
+    width: 500px;
+    position: relative;
+    float: left;
+}
+
+/*contact us section*/
+.contactussection {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+.contactus hr{
+    border: 1px solid grey;
+    width: 20%;
+    margin: auto;
+}
+
+.contactbox {
+    background-color: #e3dcdc3e;
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 20px 40px 20px 40px;
+    box-sizing: border-box;
+    flex-direction: row;
+    text-align: center;
+}
+
+.right {
+    width: 700px;
+    background-color: #fff;
+    padding: 30px 80px 30px 80px;
+    margin-left: 50px;
+}
+.right h2{
+    text-align: center;
+    font-size: 30px;
+    padding: 25px;
+}
+.input{
+    margin: 14px;
+    padding: 10px;
+    width: 250px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    text-decoration: none;
+}
+
+.submit{
+    margin-top: 28px;
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+    font-weight: bold;
+    border:2px solid;
+    background-color: black;
+    color: white;
+
+}
+.submit:hover{
+    background-color: #fff;
+    color: black;
+}
+.left iframe{
+    background-color: white
+    ;
+    margin:30px 70px 30px 60px;
+    padding: 12px;
+    width: 400px;
+    height: 400px;
+
+}
+
+.footer
+{
+    background-color: black;
+    align-items: center;
+    padding: 30px 40% ;
+
+}
+.footer a img{
+    width: 40px;
+    height: 40px;
+    margin: 12px;
+    border-radius: 28px;
+    border: 3px solid rgba(211, 211, 211, 0.725);
+}
+.stackoverflow{
+    width: 60px;
+    height: 60px;
+    
+}
+.footer a img:hover{
+    border: 4px solid white;
+
+}

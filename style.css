@@ -62,7 +62,6 @@
 
 .background {
     background-image: url("bg2.png");
-    position: ;
     width: 100%;
 }
 
@@ -446,15 +445,15 @@
     width: 40px;
     height: 40px;
     margin: 12px;
-    border-radius: 28px;
+    border-radius: 25px;
     border: 3px solid rgba(211, 211, 211, 0.725);
 }
-.stackoverflow{
-    width: 60px;
-    height: 60px;
-    
-}
+
 .footer a img:hover{
     border: 4px solid white;
 
+}
+footer p{
+    color: #fff;
+    text-align: center;
 }
